@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color: #000000;
+    background-color: black;
     min-height: 100vh;
 }
 #Support {
@@ -23,7 +23,8 @@ body {
 
 #supportTextContainer {
     width: 100vw;
-    background-color: #4A6FA5;
+    /* background-color: #2a2f3b; */
+    background-color: #23242a;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -93,11 +94,12 @@ h2 {
     padding: 10px;
     box-sizing: border-box;
     resize: none;
+    background-color: #23242a;
 }
 
 #submitButton {
     font-size: 15px;
-    background-color: #4A6FA5;
+    background-color: #23242a;
     color: white;
     border: none;
     margin: 40px;
@@ -109,11 +111,11 @@ h2 {
 }
 
 #submitButton:hover {
-    background-color: #3A5F95;
+    background-color: #23242a;
 }
 
 #submitButton:active {
-    background-color: #18325b;
+    background-color: #23242a;
 }
 
 #emailField {
@@ -125,4 +127,5 @@ h2 {
     border-radius: 10px;
     padding: 10px;
     box-sizing: border-box;
+    background-color: #23242a;
 }
