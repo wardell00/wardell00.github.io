@@ -99,7 +99,7 @@ h2 {
 
 #submitButton {
     font-size: 15px;
-    background-color: #23242a;
+    background-color: #383940;
     color: white;
     border: none;
     margin: 40px;
@@ -111,7 +111,7 @@ h2 {
 }
 
 #submitButton:hover {
-    background-color: #23242a;
+    background-color: #2D2E34;
 }
 
 #submitButton:active {
