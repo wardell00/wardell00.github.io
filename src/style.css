@@ -1,15 +1,16 @@
-
 body {
-    font-family: Roboto, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    background-color: black;
-    min-height: 100vh;
+    align-items: center;
+    min-width: 100vw;
+    background: black;
+    margin: 0;
+    padding: 0;
 }
+
 #Support {
     display: flex;
     flex-direction: column;
@@ -23,7 +24,6 @@ body {
 
 #supportTextContainer {
     width: 100vw;
-    /* background-color: #2a2f3b; */
     background-color: #23242a;
     display: flex;
     align-items: center;
@@ -46,40 +46,6 @@ h1 {
     white-space: pre-wrap;
 }
 
-#subjectPicker {
-    margin-top: 10px;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-select {
-    font-size: 15px;
-    margin: 10px;
-    border: none;
-    border-radius: 10px;
-    height: 20px;
-}
-
-#pickerDiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-#pickerContainer {
-    margin-top: 40px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
 h2 {
     color: white;
 }
@@ -95,19 +61,21 @@ h2 {
     box-sizing: border-box;
     resize: none;
     background-color: #23242a;
+    color: white;
 }
 
 #submitButton {
     font-size: 15px;
-    background-color: #383940;
+    background-color: #23242a;
     color: white;
     border: none;
     margin: 40px;
     padding: 10px;
     border-radius: 10px;
     width: 150px;
-    height: 40px;
+    height: 60px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 #submitButton:hover {
@@ -115,17 +83,112 @@ h2 {
 }
 
 #submitButton:active {
-    background-color: #23242a;
+    background-color: #383940;
 }
 
 #emailField {
     font-size: 15px;
     margin-top: 20px;
     width: 50vw;
-    height: 40px;
+    height: 50px;
     border: none;
     border-radius: 10px;
     padding: 10px;
     box-sizing: border-box;
     background-color: #23242a;
+}
+
+.dropDown {
+    min-width: 25em;
+    position: relative;
+    margin: 2em;
+    
+}
+
+.dropDown * {
+    box-sizing: border-box;
+}
+
+.select {
+    background: #23242a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #23242a solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 1em;
+}
+
+.select-clicked {
+    border: 2px solid #383940 solid;
+    box-shadow: 0 0 0.8em #383940;
+}
+.select:hover {
+    background-color: #2D2E34;
+    border: 2px solid #2D2E34;
+    border-radius: 0.5em;
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid white;
+    transition: 0.3s;
+    margin-left: 2em;
+}
+.caret-rotate {
+    transform:  rotate(180deg);
+}
+
+.menu {
+   list-style: none;
+   padding: 0.2em 0.5em;
+   background: #23242a;
+   border: 2px solid #23242a;
+   box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+   border-radius: 0.5em;
+   color: #b7b7b7;
+   position: relative;
+   left: 50%;
+   width: 100%;
+   transform: translateX(-50%);
+   opacity: 0;
+   display: none;
+   transition: 0.2s;
+   z-index: 1;
+}
+
+.menu li { 
+    padding: 0.7em 0.2em;
+    margin: 0.1em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background-color: #2D2E34;
+}
+
+.active {
+    background-color: #383940;;
+}
+
+.menu-open {
+    display: block;
+    opacity: 1;
+}
+
+#pickerDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+    width: 30%;
 }

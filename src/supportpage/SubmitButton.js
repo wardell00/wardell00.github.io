@@ -14,3 +14,9 @@ export class SubmitButton {
         return this.submitButton;
     }
 }
+
+export function submitButtonFunc() {
+    const emailField = document.getElementById('emailField');
+    const message = document.getElementById('textArea');
+    alert(emailField.value + ' ' + message.value)
+}
