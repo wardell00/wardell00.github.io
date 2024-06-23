@@ -1,0 +1,68 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #2c3e50;
+}
+
+#Privacy {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Section Styles */
+#privacy-section-container {
+    margin-top: 20px;
+}
+
+#privacy-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+#privacy-section-title {
+    font-size: 1.8em;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+#privacy-section-content {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #Privacy {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #privacy-section-title {
+        font-size: 1.5em;
+    }
+
+    #privacy-section-content {
+        font-size: 1em;
+    }
+}
